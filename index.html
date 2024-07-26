@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="Styles/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <title>Landing page</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-burger" id="nav_Logo"> food</i>
+
+            <ul id="nav_List">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Peça aqui
+            </button>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+            <ul id="mobile_nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Peça aqui
+            </button>
+
+        </div>
+    </header>
+
+    <main id="content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class="title">
+                    O sabor que vai até
+                    <span>você!</span>
+                </h1>
+
+                <p class="description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="#" class="btn-default">
+                        Ver cardápio
+                    </a>
+                    <a href="tel:+5555555555555" targer="_blank" rel="external" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        (27) 3344-4493
+                    </a>
+                </div>
+                <div class="social-media-buttons">
+
+                    <!-- Botão com link direto para o whatsapp-->
+                    <a href="https://wa.me/5527996196506?text=Ol%C3%A1,%20Eu%20gostaria%20de%20fazer%20um%20pedido!"
+                        target="_blank" rel="external">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <!-- Botão com link direto para o instagram-->
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <!-- Botão com link direto para o instagram-->
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                </div>
+            </div>
+
+
+
+            <div id="banner">
+                <img src="img/hero.png" alt="Vários Pratos de comidas">
+            </div>
+        </section>
+
+
+        <section id="menu">
+            <h2 class="section-title">Cardápio</h2>
+            <h3 class="section-subtitle">Nossos pratos especiais</h3>
+
+
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="img/dish.png" class="dish-image" alt="Lámen">
+
+                    <h3 class="dish-title">
+                        Lámen Tradicional
+                    </h3>
+                    <span class="dish-description">
+                        Composto por um tipo de macarrão chinês, uma sopa com caldo à base de ossos de porco, peixe ou
+                        frango, e temperados
+                        com uma base tarê (molho) que dá sabor ao caldo base
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$60,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                
+                    <img src="img/dish2.png" class="dish-image" alt="Lámen">
+                
+                    <h3 class="dish-title">
+                        Misto Quente Tradicional
+                    </h3>
+                    <span class="dish-description">
+                        Composto por 3 camadas de pães de forma tradicionais,
+                        com muito queijo e presunto.
+                    </span>
+                
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(900+)</span>
+                    </div>
+                
+                    <div class="dish-price">
+                        <h4>R$10,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                
+                    <img src="img/dish3.png" class="dish-image" alt="Lámen">
+                
+                    <h3 class="dish-title">
+                        Salada de Kiwi e Morango
+                    </h3>
+                    <span class="dish-description">
+                        Deliciosa salada de Kiwi com Morango e banana
+                    </span>
+                
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                
+                    <div class="dish-price">
+                        <h4>R$20,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                
+                    <img src="img/dish4.png" class="dish-image" alt="Lámen">
+                
+                    <h3 class="dish-title">
+                        Macarrão na Chapa
+                    </h3>
+                    <span class="dish-description">
+                        Delicioso Macarrão na Chapa com Tomate, Frango e Pimentão
+                    </span>
+                
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+                
+                    <div class="dish-price">
+                        <h4>R$40,00</h4>
+                        <button class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <img src="img/chef.png" id="testimonial_chef" alt="Chefe culinária">
+
+            <div id="testimonials_content">
+                <h2 class="section-title">
+                    Depoimentos
+                </h2>
+                <h3 class="section-subtitle">
+                    O que os clientes falam sobre nós
+                </h3>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="img/avatar.png" class="feedback-avatar" alt="avatar de comentaristas">
+                    
+                        <div class="feedback-content">
+                            <p>
+                                Thayane Freitas
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                            </p>
+                        </div>               
+                    </div>
+
+                    <div class="feedback">
+                        <img src="img/avatar.png" class="feedback-avatar" alt="avatar de comentaristas">
+                    
+                        <div class="feedback-content">
+                            <p>
+                                Thayane Freitas
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                            </p>
+                        </div>
+                </div>
+                <button class="btn-default">
+                    Ver mais Avaliações
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="img/wave.svg" alt="Onda para estilização do fundo da Landing page">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2024 Arizio neto
+            </span>
+
+            <div class="social-media-buttons">
+            
+                <!-- Botão com link direto para o whatsapp-->
+                <a href="https://wa.me/5527996196506?text=Ol%C3%A1,%20Eu%20gostaria%20de%20fazer%20um%20pedido!" target="_blank"
+                    rel="external">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            
+                <!-- Botão com link direto para o instagram-->
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            
+                <!-- Botão com link direto para o instagram-->
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            
+            </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
